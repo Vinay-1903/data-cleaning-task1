@@ -32,27 +32,48 @@ This project demonstrates how to clean and prepare raw data for machine learning
    python Task-1.py
    ```
 
-## What You'll Learn
-- Data cleaning techniques
-- Handling missing data
-- Encoding categorical variables
-- Feature scaling (normalization and standardization)
-- Outlier detection and removal
-- Importance of preprocessing in machine learning
+Interview Questions & Answers
 
-## Notes
-- The dataset is loaded directly from an online source.
-- The cleaned dataset is saved locally for further use.
+### 1. What are the different types of missing data?
+- **MCAR (Missing Completely at Random)**: No logical pattern behind the missing data.
+- **MAR (Missing at Random)**: Missing values are related to other observed variables.
+- **MNAR (Missing Not at Random)**: Missing values are related to the missing variable itself.
 
-## Interview Questions Covered
-- Types of missing data
-- Handling categorical variables
-- Difference between normalization and standardization
-- Outlier detection methods
-- Importance of preprocessing in ML
-- One-hot encoding vs label encoding
-- Handling data imbalance
-- Effect of preprocessing on model accuracy
+### 2. How do you handle categorical variables?
+- **Label Encoding** for ordinal data (e.g., Low, Medium, High).
+- **One-Hot Encoding** for nominal data (e.g., cities, genders).
+- **Target Encoding** can be used in some advanced scenarios.
+
+### 3. What is the difference between normalization and standardization?
+- **Normalization**: Rescales data to a [0, 1] range.
+- **Standardization**: Centers data around the mean with a standard deviation of 1 (Z-score).
+
+### 4. How do you detect outliers?
+- **Visual methods**: Boxplots, scatter plots.
+- **Statistical methods**: Z-score, IQR (Interquartile Range).
+
+### 5. Why is preprocessing important in ML?
+- Removes noise and inconsistencies.
+- Converts raw data into a usable format.
+- Improves model performance and accuracy.
+- Prevents biased training and improves generalization.
+
+### 6. What is one-hot encoding vs label encoding?
+- **One-Hot Encoding**: Creates separate binary columns for each category.
+- **Label Encoding**: Assigns an integer to each category (useful for ordinal data).
+
+### 7. How do you handle data imbalance?
+- **Oversampling**: Duplicate or synthetically generate minority class samples (e.g., SMOTE).
+- **Undersampling**: Reduce majority class samples.
+- **Class weights**: Adjust model loss function to penalize mistakes on the minority class more.
+
+### 8. Can preprocessing affect model accuracy?
+Yes, significantly! Good preprocessing ensures the model learns meaningful patterns and improves performance by:
+- Removing noise,
+- Scaling features properly,
+- Encoding correctly,
+- Handling outliers and imbalanced data.
+
 
 ---
 This completes the data cleaning and preprocessing task.
